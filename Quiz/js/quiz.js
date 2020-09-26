@@ -1,9 +1,5 @@
 console.log("hello");
 
-window.onload = function(){
-    show(0);
-}
-
 let questions = [
     {
       id: 1,
@@ -115,7 +111,7 @@ let questions = [
       },
       {
         id: 10,
-        question: "Prisoner's Scrapbook is written by?",
+        question: "Prisoners Scrapbook is written by?",
         answer: "L.k Advani",
         options: [
           "Madan Mohan Malviya",
@@ -126,7 +122,15 @@ let questions = [
         attempted: 0,
       },
   ];
-
+  let question_count = 0;
+  let point = 0;
+  let point_initial = 0;
+  
+  window.onload = function() {
+    show(question_count);
+  
+  };
+  
   function submitForm(e){
     e.preventDefault();
     let name = document.forms["welcome_form"]["name"].value;
@@ -139,9 +143,7 @@ let questions = [
     console.log(name);
 }
 
-let question_count = 0;
-let point = 0;
-let point_initial = 0;
+
 
 function next(){
     let user_answer = document.querySelector("li.option.active").innerHTML;
@@ -211,6 +213,8 @@ function toggleActive(){
 }
 
 function endpage(){
-    location.href = "end.html";
+  sessionStorage.setItem("time", time);
+  clearInterval(mytime);
+  location.href = "end.html";
 }
 
