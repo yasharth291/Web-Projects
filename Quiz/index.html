@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Library Quiz
+        </title>
+
+        <!--include styles.css-->
+        <link rel = "stylesheet" href = "styles/styles.css">
+    </head>
+    <body>
+        <div class="heading">
+           <div class="first_heading">
+               Library Quiz
+           </div>
+        </div>
+        <div class="rules">
+            <div class="rules_head">
+                Rules
+            </div>
+            <div class="rules_body">
+                <ul class="rules_group">
+                    <li class="rule">There are 4 options out of which only one is correct</li>
+                    <li class="rule">There is no Time limit</li>
+                    <li class="rule">+1 for write answer and no marks for wrong answer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="welcome_text">
+                <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+                    <input type="text" name="name" placeholder="Type your name here"> 
+                    <button type="submit">
+                        Start Quiz
+                    </button>
+                </form>
+            </div>
+        </div>
+       
+        <!--include javascrip-->
+        <script src="js/quiz.js"></script>
+    </body>
+</html>

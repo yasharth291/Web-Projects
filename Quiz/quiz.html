@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Library Quiz
+        </title>
+
+        <!--include styles.css-->
+        <link rel = "stylesheet" href = "styles/styles.css">
+    </head>
+    <body>
+        <div class="wrapper_one">
+            <div class="quiz">
+                <div class="quiz_heading">
+                    <div class="quiz_user">
+                        <h4>
+                            Welcome!  
+                        </h4>
+                    </div>
+                    <div class="quiz_timer">
+                        <span class="time">
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="quiz_body">
+                    <div id="questions">
+                        <h2>
+                            Q1. loren epsum 
+                        </h2>
+                        <ul class="option_group">
+                            <li class="option">option 1</li>
+                            <li class="option">option 2</li>
+                            <li class="option">option 3</li>
+                            <li class="option">option 4</li>
+                        </ul>
+                    </div>
+                    <div class="next_previous">
+                        <button class="btn_previous" onclick="previous()">
+                            Previous
+                        </button>
+                        <button class="btn_next" onclick="next()">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!--include javascrip-->
+        <script src="js/quiz.js"></script>
+        <script src="js/timer.js"></script>
+    </body>
+</html>
