@@ -115,7 +115,7 @@ let questions = [
       },
       {
         id: 10,
-        question: "Prisoners Scrapbook is written by?",
+        question: "Prisoner's Scrapbook is written by?",
         answer: "L.k Advani",
         options: [
           "Madan Mohan Malviya",
